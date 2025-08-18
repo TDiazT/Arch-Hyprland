@@ -10,6 +10,10 @@ plugins=(
     archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
+    z
+    fzf
+    aliases
+    alias-finder
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -39,3 +43,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+
+# Alias-finder
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+
